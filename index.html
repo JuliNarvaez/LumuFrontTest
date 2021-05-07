@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's get spicy</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Let's get spicy</h1>
+        <p>Bacon Ipsun Generator</p>
+    </header>
+
+    <section class="graph">
+        <p class="word-counter"></p>
+        <p class="char-counter"></p>
+    </section>
+
+    <section class="controllers">
+        <label for="paras"># PARAGRAPHS</label>
+        <input type="number" name="Number of Paragraphs" id="paras" value="1">
+        <label for="lorem">STARTS WITH LOREM</label>
+        <input type="checkbox" name="Starts with lorem" id="lorem" onclick="checkedLorem()">
+        <button type="button" onclick="generate()">GENERATE!</button>
+        <p class="text"></p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
