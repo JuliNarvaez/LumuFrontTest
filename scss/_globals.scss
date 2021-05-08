@@ -1,0 +1,94 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.container{
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+}
+.header{
+    width: 600px;
+}
+
+.chart{
+    background-color: #ffffff;
+    width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.counter{
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 600px;
+}
+
+a, span.anychart-credits-text {
+    display: none;
+}
+
+.controllers{
+    max-width: 600px;
+    border: solid 1px gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.counters{
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.generate-button:hover{
+    background-color: rosybrown;
+}
+
+.text{
+    grid-column: 1 /4 ;
+    grid-row: 2/3;
+    background-color: white;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+#paras{
+    width: 20px;
+}
+
+#lorem{
+
+}
+
+.generate-button{
+    color: #fff;
+    background-color: red;
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

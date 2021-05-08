@@ -1,82 +1,102 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color: #ffffff;
+body {
+  background-color: #ffffff;
 }
 
-.container{
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-    justify-items: center;
-}
-.header{
-    width: 600px;
+.container {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
-.graph{
-    width: 600px;
+.header {
+  width: 600px;
 }
 
-.chart-cont {
-    width: 90%;
+.chart {
+  background-color: #ffffff;
+  width: 600px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+  width: 600px;
 }
 
 a, span.anychart-credits-text {
-    display: none;
+  display: none;
 }
 
-/* #myChart{
-    width: 600px;
-    height: 200px;
-} */
-
-.controllers{
-    max-width: 600px;
-    border: solid 1px gray;
-    padding: 10px;
-    border-radius: 10px;
+.controllers {
+  max-width: 600px;
+  border: solid 1px gray;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.counters{
-    width: 600px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 30px;
+.counters {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 30px;
 }
 
-.generate-button:hover{
-    background-color: rosybrown;
+.generate-button:hover {
+  background-color: rosybrown;
 }
 
-.text{
-    grid-column: 1 /4 ;
-    grid-row: 2/3;
-    background-color: white;
-    padding: 20px;
-    line-height: 1.5;
-    border-radius: 10px;
+.text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 /4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-color: white;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 10px;
 }
 
-#paras{
-    width: 20px;
+#paras {
+  width: 20px;
 }
 
-#lorem{
-
-}
-
-.generate-button{
-    color: #fff;
-    background-color: red;
-    border: none;
-    height: 40px;
-    width: 120px;
-    border-radius: 10px;
+.generate-button {
+  color: #fff;
+  background-color: red;
+  border: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
 }
 
 input::-webkit-outer-spin-button,
@@ -88,3 +108,4 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+/*# sourceMappingURL=style.css.map */

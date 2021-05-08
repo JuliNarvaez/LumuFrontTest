@@ -4,23 +4,16 @@ const SELECTOR = {
     lorem: 'lorem',
     paragraphs: '#paras',
     textContainer: '.text',
-    countersContainer: '.counters',
-    wordCounter: '.word-counter',
-    charCounter: '.char-counter'
+    countersContainer: '.counter',
+    wordCounter: '.counter__word',
+    charCounter: '.counter__char',
+    chartContainer: 'chart__container'
 };
 
 function checkedLorem() {
     const {checked:isLoremChecked} = document.getElementById(SELECTOR.lorem); 
     lorem = isLoremChecked ? 1 : 0;
 }
-
-/* function generate() {
-    const paragraphs = document.querySelector(SELECTOR.paragraphs).value;
-    fetch(`https://baconipsum.com/api/?type=all-meat&paras=${paragraphs}&start-with-lorem=${lorem}`)
-        .then(response => response.json())
-        .then(handleResponse)
-        .catch(err => console.log(err.message));
-} */
 
 async function generate() {
     const paragraphs = document.querySelector(SELECTOR.paragraphs).value;
@@ -34,7 +27,6 @@ async function generate() {
         console.error(error.message);
     }    
 }
-
 
 function handleResponse(text) {
     const textContainer = document.querySelector(SELECTOR.textContainer);
@@ -85,7 +77,7 @@ function renderChart(rows) {
         };
         chart = chart || anychart.column()
         chart.data(data);
-        chart.container("container");
+        chart.container(SELECTOR.chartContainer);
         chart.draw();
     });
 }

@@ -17,29 +17,26 @@
             <h1>Let's get spicy</h1>
             <p>Bacon Ipsun Generator</p>
         </header>
-        <section class="counters">
-            <p class="word-counter"></p>
-            <p class="char-counter"></p>
-        </section>
-        <section class="graph">
+        <div class="counter">
+            <p class="counter__word"></p>
+            <p class="counter__char"></p>
+        </div>
+        <div class="chart">
             <p>HISTOGRAM TOP 3 WORDS:</p>
-            <div class="chart-cont">
-                <div id="container"></div>
+            <div id="chart__container">
             </div>
-        </section>
+        </div>
 
-        <section class="controllers">
+        <div class="controllers">
             <label for="paras"># PARAGRAPHS</label>
             <input type="number" name="Number of Paragraphs" id="paras" value="1">
             <label for="lorem">STARTS WITH LOREM</label>
             <input type="checkbox" name="Starts with lorem" id="lorem" onclick="checkedLorem()">
             <button type="button" class="generate-button" onclick="generate()">GENERATE!</button>
             <p class="text"></p>
-        </section>
-
+        </div>
     </div>
     <script src="script.js"></script>
-
 </body>
 
 </html>
