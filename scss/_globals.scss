@@ -24,6 +24,8 @@ body{
     width: 600px;
     padding: 0 20px;
     box-sizing: border-box;
+    border: solid 1px lightgray;
+    border-top: 0;
 }
 
 .counter{
@@ -33,6 +35,8 @@ body{
     box-sizing: border-box;
     background-color: #ffffff;
     width: 600px;
+    border: solid 1px lightgray;
+    border-bottom: 0;
 }
 
 a, span.anychart-credits-text {
@@ -41,9 +45,16 @@ a, span.anychart-credits-text {
 
 .controllers{
     max-width: 600px;
-    border: solid 1px gray;
-    padding: 10px;
-    border-radius: 10px;
+    border: solid 1px lightgray;
+    box-sizing: border-box;
+    margin-top: 20px;
+
+    &__act{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0;
+    }
 }
 
 .counters{
@@ -53,34 +64,29 @@ a, span.anychart-credits-text {
     gap: 30px;
 }
 
-.generate-button:hover{
-    background-color: rosybrown;
-}
-
 .text{
-    grid-column: 1 /4 ;
-    grid-row: 2/3;
     background-color: white;
     padding: 20px;
     line-height: 1.5;
-    border-radius: 10px;
+    margin: 0;
 }
 
 #paras{
-    width: 20px;
-}
-
-#lorem{
-
+    width: 25px;
 }
 
 .generate-button{
     color: #fff;
-    background-color: red;
+    background-color: #ff5f58;
     border: none;
     height: 40px;
     width: 120px;
-    border-radius: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: red;
+    }
 }
 
 input::-webkit-outer-spin-button,
