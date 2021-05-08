@@ -99,6 +99,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 0;
+  font-weight: 700;
 }
 
 .controllers #paras {
