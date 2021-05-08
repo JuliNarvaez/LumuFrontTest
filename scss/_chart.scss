@@ -1,0 +1,23 @@
+.chart {
+    background-color: var(--background-color);
+    width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: solid 1px var(--border-color);
+    border-radius: 0 0 3px 3px;
+    border-top: 0;
+
+    path#ac_path_p,
+    path#ac_path_q,
+    path#ac_path_r,
+    path#ac_path_n,
+    path#ac_path_o {
+        fill: var(--chart-bars-color);
+        stroke: none;
+    }
+
+    a,
+    span.anychart-credits-text {
+        display: none;
+    }
+}
