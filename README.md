@@ -4,7 +4,7 @@ You can clone the repo and open the HTML in a viewer such as liveserver or click
 
 ### How it works:
 
-Choose how many paragraphs do you want to get, check if u want lorem ipsum at start and click generate. It will show the three most repeated words in a bar chart.
+Choose how many paragraphs do you want to get, check if u want lorem ipsum at start and click generate. It will show the total words, total characters and the three most repeated words in a bar chart.
 
 ## Q&A:
 
